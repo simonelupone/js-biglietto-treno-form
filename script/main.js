@@ -64,9 +64,9 @@ button.addEventListener('click', function (event) {
 });
 
 buttonReset.addEventListener('click', function (event) {
-    distanceInput.innerHTML = '';
-    userAge.innerHTML = '';
-    userName.innerHTML = '';
-    userLastName.innerHTML = '';
-
+    event.preventDefault();
+    distanceInput.value = '';
+    userAge.value = '';
+    userName.value = '';
+    userLastName.value = '';
 });
